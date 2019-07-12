@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 export const pageQuery = graphql` {
-  allWordpressPage(filter: {wordpress_id: {eq: 2}}) {
+  allWordpressPage(filter: {wordpress_id: {eq: 5}}) {
     nodes {
       content
       slug
