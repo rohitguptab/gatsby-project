@@ -8,6 +8,7 @@ export const pageQuery = graphql` {
     nodes {
       content
       slug
+      title
     }
   }
 } `
@@ -16,10 +17,9 @@ const about = (node) => (
   <Layout>
     {/* {console.log(node.data.allWordpressPage.nodes)} */}
     <SEO title="About US" />
-    <h1>Sample Page</h1>
-
     {node.data.allWordpressPage.nodes.map((data, index) => (
         <div>
+          <h1>{data.title}</h1>
           <span dangerouslySetInnerHTML={{__html: data.content}} />
         </div>
     ))}

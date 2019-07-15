@@ -26,6 +26,7 @@ const Header = ({ siteTitle }) => (
       </Link>
       <ul style={{ listStyle: `none`, float: `right` }}>
         <ListLink to="/about">Sample Page</ListLink>
+        <ListLink to="/blogs">Blogs</ListLink>
         <ListLink to="/contact">Contact</ListLink>
       </ul>
       </div>
